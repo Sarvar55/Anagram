@@ -11,11 +11,10 @@ char string1[100];
 char string2[100];
 
 printf("Please enter two words:");
-gets(string1);/*
-scanf ile arasýndaký fark,
-/learn c porgraming/ yazdigimizda learn alinir 
-gets ise hepsini alir*/
-gets(string2);
+//gets(string1);
+//gets(string2);
+scanf("%s",strin1);
+scanf("%s",string2);	
 
 if(isAnagram(string1,string2))
 	printf("Anagram...");
@@ -45,11 +44,11 @@ void sort(char *str){
 	for(int i = 0;i < strlen(str); i++){
 		for(int j = i ;j < strlen(str); j++){
 			if(str[i] > str[j]){
-             temp = *(str+i);
+                          temp = *(str+i);
 			 *(str+i) = *(str+j);
 			 *(str+j) = temp;
-           }
-		}
+                  }
+	     }
 	}
 }
 
